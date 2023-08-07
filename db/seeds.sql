@@ -1,0 +1,15 @@
+-- INSERT INTO movies(name)
+-- VALUES 
+--   ("Iron man"),
+--   ("iron man 2"),
+--   ("iron man 3"),
+--   ("Spider man"),
+--   ("Thor");
+
+--   INSERT INTO movie_review(review, movie_id)
+-- VALUES 
+--   ("1*",1),
+--   ("2*",2),
+--   ("3*",3),
+--   ("4*",4),
+--   ("5*",5);
