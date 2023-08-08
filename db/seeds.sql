@@ -1,15 +1,26 @@
--- INSERT INTO movies(name)
--- VALUES 
---   ("Iron man"),
---   ("iron man 2"),
---   ("iron man 3"),
---   ("Spider man"),
---   ("Thor");
+USE employee_db;
 
---   INSERT INTO movie_review(review, movie_id)
--- VALUES 
---   ("1*",1),
---   ("2*",2),
---   ("3*",3),
---   ("4*",4),
---   ("5*",5);
+INSERT INTO department (name)
+VALUES 
+  ("Sales"),
+  ("Finance"),
+  ("Marketing"),
+  ("Human Resources"),
+  ("Support");
+
+INSERT INTO roles (title, salary, department_id)
+VALUES 
+  ("Salesman", 50000, 1),
+  ("Accountant", 80000, 2),
+  ("Marketer", 70000, 3),
+  ("Human Resource Professional", 75000, 4),
+  ("Support Technician", 90000, 5),
+  ("Manager", 120000, 4);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES 
+  ("Kelly", "Clarkson", 1, null),
+  ("Britney", "Spears", 2, 1),
+  ("Christina", "Aguilera", 3, 1),
+  ("Lady", "Gaga", 4, 1),
+  ("Taylor", "Swift", 5, 1);
