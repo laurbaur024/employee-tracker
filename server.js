@@ -10,7 +10,8 @@ const { addDepartment, addRole, addEmployee, updateRole } = require ('./lib/quer
 
 
 
-init = () => {
+connection.connect (err => {
+  if (err) throw err;
   console.log("___________________________________")
   console.log("|           WELCOME TO            |")
   console.log("|        EMPLOYEE TRACKER         |")
@@ -18,14 +19,16 @@ init = () => {
   console.log("___________________________________")
   console.log("")
   startPrompt();
-};
+})
 
 
-const startPrompt = () => {
+
+
+function startPrompt() {
   inquirer.prompt ([
     {
       type: 'list',
-      name: 'begin',
+      name: 'choices',
       message: 'How would you like to begin?',
       choices: [
         'View all departments',
@@ -38,8 +41,8 @@ const startPrompt = () => {
         'Exit',]
     }
   ])
-    .then((answers) => {
-      const { choices } = answers;
+    .then((choice) => {
+      const { choices } = choice;
 
       if (choices === "View all departments") {
         viewAllDepartments();
@@ -63,10 +66,10 @@ const startPrompt = () => {
         updateRole();
       }
       if (choices === "Exit") {
+        console.log("Goodbye!")
         connection.end()
       }
     })
 }
 
-
-init()
+module.exports = {startPrompt}
