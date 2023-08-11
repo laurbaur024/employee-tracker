@@ -31,7 +31,7 @@ function startPrompt() {
         'View all employees',
         'Add a department',
         'Add a role',
-        'Add an employee',
+        // 'Add an employee',
         'Update employee role',
         'Exit',]
     }

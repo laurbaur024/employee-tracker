@@ -14,10 +14,10 @@
 
 ## Screenshot
 
-- Here is a screenshot of the working webpage.
+- Here is a screenshot of the working application.
 ![homework](./img/homework-screenshot.png)
 
 ## Video of Application
 
 - Here is a video of the application running.
-[employee-tracker]()
+[employee-tracker](https://drive.google.com/file/d/1-XnkSYTdnhlVE7LU4srjxDWgSYNpQOEg/view?usp=sharing)
