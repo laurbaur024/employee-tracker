@@ -8,7 +8,7 @@
 
 - To start the application type in npm start into the command line.
 - You may view the departments, roles, or employees.
-- You may add a department, role, or employee.
+- You may add a department or role.
 - You can update an employees existing role.
 - If you would like to exit either choose exit from the prompts or hit ctrl+c(windows) or command+c(mac).
 
